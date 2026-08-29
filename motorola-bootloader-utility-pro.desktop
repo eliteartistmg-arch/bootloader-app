@@ -1,0 +1,21 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Motorola Bootloader Utility Pro
+GenericName=Bootloader Utility
+Comment=Fastboot and EDL utility for Motorola devices
+TryExec=/workspaces/bootloader-app/run_app.sh
+Exec=/workspaces/bootloader-app/run_app.sh
+Icon=/workspaces/bootloader-app/icons/motorola_bootloader_icon_128.png
+Terminal=false
+StartupNotify=true
+Categories=Utility;System;Development;
+Keywords=Motorola;bootloader;fastboot;EDL;unlock;flash;
+Actions=OpenConsole;
+X-GNOME-FullName=Motorola Bootloader Utility Pro
+X-GNOME-UsesNotifications=true
+
+[Desktop Action OpenConsole]
+Name=Open in Terminal
+Exec=/usr/bin/gnome-terminal -- bash -lc '/workspaces/bootloader-app/run_app.sh'
+OnlyShowIn=GNOME;
